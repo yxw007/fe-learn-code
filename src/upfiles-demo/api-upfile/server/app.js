@@ -6,7 +6,7 @@ var koaStatic = require('koa-static');
 var path = require('path');
 var koaBody = require('koa-body');
 var fs = require('fs');
-var Koa = require('koa2');
+var Koa = require('koa');
 
 var app = new Koa();
 var port = process.env.PORT || '8100';
@@ -77,4 +77,4 @@ function getRenderData(opt) {
  */
 var server = http.createServer(app.callback());
 server.listen(port);
-console.log('upload file server start ......   ');
+console.log('upload file server start, port:8100   ');

@@ -6,7 +6,7 @@ var koaStatic = require('koa-static');
 var path = require('path');
 var koaBody = require('koa-body');
 var fs = require('fs');
-var Koa = require('koa2');
+var Koa = require('koa');
 
 
 var app = new Koa();
@@ -122,4 +122,4 @@ app.use((ctx) => {
  */
 var server = http.createServer(app.callback());
 server.listen(port);
-console.log('demo13 server start ......   ');
+console.log('demo13 server start, port:8100   ');
