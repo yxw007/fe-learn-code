@@ -35,10 +35,8 @@
 </html>
 <script>
   var iframe = document.getElementById("temp-iframe");
-
   iframe.addEventListener("load", function () {
     var result = iframe.contentWindow.document.body.innerText;
-    debugger;
     console.log("result:", result);
     //得到结果，做后续处理，如图片预览
     if (result.length > 0) {
