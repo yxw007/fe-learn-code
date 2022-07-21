@@ -5,7 +5,7 @@ var http = require('http');
 var koaStatic = require('koa-static');
 var path = require('path');
 var koaBody = require('koa-body');
-var Koa = require('koa2');
+var Koa = require('koa');
 
 
 var app = new Koa();

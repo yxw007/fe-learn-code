@@ -13,3 +13,4 @@ server_compiled/*
 .history/
 data
 conf
+src/**/uploads/
